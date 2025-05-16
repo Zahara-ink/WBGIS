@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGIS Kota Bandung</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+
+integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-
+button.css">
+
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-
+fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+
+<link rel="stylesheet" href="https://balladaniel.github.io/leaflet-dataclassification/leaflet-
+dataclassification.css" />
+
+<!--JavaScript--->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-
+20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-
+fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+
+<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js"
+charset="utf-8"></script>
+
+<script src="https://balladaniel.github.io/leaflet-dataclassification/leaflet-
+dataclassification.js"></script>
+
+<!--QUERY--->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+<body>
+<header id="navbar">
+    <div class="container">
+    <div class="logo">
+    <img src="asset/Logo.png" alt="Logo" width="100">
+    <h1>WebGIS Kota Bandung</h1>
+    </div>
+    <nav>
+    <ul>
+    <li><a href="#hero-section">Home</a></li>
+    <li><a href="#map-section">Map</a></li>
+    <li><a href="#data-section">Data</a></li>
+    <li><a href="#author-section">Author</a></li>
+    <li><a href="#footer">Contact</a></li>
+    </ul>
+    </nav>
+    </div>
+    </header>
+    <div id="hero-section" class="hero-section">
+        <div class="hero-content">
+        <h1>WebGIS Basis Data Spasial Kota Bandung</h1>
+        <p>Halaman untuk Melakukan Eksplorasi Basis Data Spasial di Kota Bandung</p>
+        </div>
+    </div>
+    <!--Map Section-->
+    <div id="map-section">
+        <h2>Jelajahi WebGIS Basis Data Spasial Kota Bandung</h2>
+        <div id="map">
+        <!-- akan muncul peta disini -->
+        </div>
+        </div>
+        <div id="data-section">
+            <h2>Data Tersedia</h2>
+            <div class="container">
+            <div class="column">
+            <div class="data-item">
+            
+            <img src="asset/Sejarah.jpg" alt="Image 1">
+            
+            <div class="description">
+            <h3>Sejarah</h3>
+            <p>Kota Bandung, yang dikenal sebagai "Kota Kembang", didirikan pada abad ke-19, Bandung awalnya merupakan kawasan pertanian yang dikelilingi oleh pegunungan dan aliran sungai. Pada tahun 1810, Belanda mulai mengembangkan Bandung sebagai pusat pemerintahan dan perdagangan, menjadikannya kota yang strategis. </p>
+            <p>Pada tahun 1906, Bandung resmi diangkat menjadi status kota, dan sejak saat itu, perkembangan infrastruktur, seperti jalan dan bangunan, semakin pesat. Kota ini juga menjadi tempat penyelenggaraan Konferensi Asia-Afrika pada tahun 1955, yang mengukuhkan posisinya sebagai pusat diplomasi dan kolaborasi internasional.</p>
+            </div>
+            </div>
+            </div>
+            <div class="column">
+            <div class="data-item">
+            
+            
+            <img src="asset/Fasilitas.jpeg" alt="Image 1">
+            
+            <div class="description">
+            <h3>Fasilitas</h3>
+            <p>Kota Bandung menawarkan berbagai fasilitas yang mendukung kenyamanan dan kebutuhan warganya serta pengunjung seperti trasnportasi umum (angkutan kota, bus Trans Metro Bandung, dan ojek online), layanan kesehatan (rumah sakit, klinik dan puskesmas), pendidikan, fasilitas olahraga (stadion, lapangan, dan pusat kebugaran), pasar tradisional dan mall, galeri seni dan teater.</p>
+            
+            </div>
+            </div>
+            </div>
+            <div class="column">
+            <div class="data-item">
+            
+            <img src="asset/Priwisata.webp" alt="Image 1">
+            
+            <div class="description">
+            <h3>Pariwisata</h3>
+            <p>Kota Bandung merupakan salah satu destinasi pariwisata favorit di Indonesia. Dikenal dengan keindahan alamnya, Bandung menawarkan beragam tempat wisata yang memikat, mulai dari pegunungan yang menakjubkan hingga danau yang memesona. Wisatawan dapat mengunjungi tempat ikonik seperti Tangkuban Perahu dan Kawah Putih, yang menawarkan pemandangan alam yang spektakuler. Selain keindahan alam, Bandung juga kaya akan budaya dan sejarah, dengan berbagai museum, situs bersejarah, dan festival budaya yang mencerminkan kekayaan tradisi lokal.</p>
+            
+            </div>
+            </div>
+        
+            </div>
+            </div>
+            </div>
+            
+            
+            </div>
+            </div>
+            <div id="author-section">
+                
+                <div class="author-content">
+                <h2>Tentang Pembuat</h2>
+                <img src="asset/rukawa.jpg" alt="Profile Picture" class="profile-picture">
+                <div class="author-name">
+                <h3>Eva Zahara</h3>
+                </div>
+                <p>Seorang Analis Sistem Informasi Geografis (SIG) dengan pengalaman 7 tahun dalam
+                mengerjakan proyek dari pemerintah dan swasta baik dalam pekerjaan proyek maupun pelatihan SIG.
+                Pekerja keras dan rajin dalam bekerja. Saat ini memiliki minat pada SIG, penginderaan jauh,
+                WebGIS, dan SIG untuk mitigasi bencana dan termotivasi untuk terus belajar dan berkembang sebagai
+                analis SIG.</p>
+                </div>
+                </div>
+                <div id="footer">
+                    <div class="footer-content">
+                    <h3>Hubungi Saya</h3>
+                    <p>Email: evazhra@gmail.com</p>
+                    <p>Phone: +6282145678566</p>
+                    </div>
+                    </div>
+   
+    <script src="script.js"></script> 
+</body>
+</html>
